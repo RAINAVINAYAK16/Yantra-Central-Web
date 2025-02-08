@@ -16,6 +16,7 @@ export default {
         yoshiro_b: "yoshiro_bold",
         apex: "apex",
         teko: "teko",
+        inknut: "inknut-antiqua",
       },
       fontWeight: {
         normal: 400,

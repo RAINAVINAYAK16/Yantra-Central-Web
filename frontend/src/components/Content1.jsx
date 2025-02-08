@@ -1,4 +1,3 @@
-import React from "react";
 import robot from "../assets/robot.png";
 
 export default function Content1() {
@@ -6,10 +5,10 @@ export default function Content1() {
     <div className="flex items-center justify-between min-h-screen px-10">
       {/* Text Section */}
       <div className="max-w-lg">
-        <h1 className="text-black text-[3rem] font-serif mb-4">
+        <h1 className="text-black text-[3rem] font-inknut-antiqua">
           Water water everywhere
         </h1>
-        <p className="text-black text-[1.25rem] font-sans">
+        <p className="text-black text-[1.25rem] font-inknut-antiqua">
           This is an all-in-one platform for real-time simulation of water distribution pipelines, from reservoirs to water treatment plants.
         </p>
       </div>

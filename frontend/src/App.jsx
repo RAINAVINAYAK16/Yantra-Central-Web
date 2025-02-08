@@ -1,15 +1,13 @@
-import images from "./constants/images";
-import { Form } from "./sections/Form";
-import Projects from "./sections/Projects";
-import { Hero } from "./sections/Hero";
-import { Footer } from "./sections/Footer";
+import Content1 from './components/Content1';
+import Navbar1 from './components/Navbar1';
+import WhatWeDo from './sections/Projects';
+
 function App() {
   return (
-    <div className="bg-dark">
-      <Hero />
-      <Projects />
-      <Form />
-      <Footer />
+    <div>
+      <Navbar1  />
+      <Content1 />
+      <WhatWeDo />
     </div>
   );
 }

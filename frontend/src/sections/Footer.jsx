@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { icons } from "../constants/images";
 
 const socials = [
-  { src: icons.facebook, href: "https://www.facebook.com/mfcvit/" },
-  { src: icons.instagram, href: "https://www.instagram.com/mfc_vit/" },
-  { src: icons.youtube, href: "https://www.youtube.com/c/MozillaFirefoxClubVIT" },
-  { src: icons.github, href: "https://github.com/MFC-VIT" },
-  { src: icons.linkedin, href: "https://www.linkedin.com/company/mfcvit/mycompany/" },
-  { src: icons.twitter, href: "https://x.com/mfc_vit" },
-  { src: icons.medium, href: "https://medium.com/mozilla-firefox-club/tagged/mfcvit" },
+  { src: icons.facebook, href: "" },
+  { src: icons.instagram, href: "" },
+  { src: icons.youtube, href: "" },
+  { src: icons.github, href: "" },
+  { src: icons.linkedin, href: "" },
+  { src: icons.twitter, href: "" },
+  { src: icons.medium, href: "" },
 ];
 
 const useDynamicText = (id) => {
@@ -20,7 +20,7 @@ const useDynamicText = (id) => {
       const width = target.offsetWidth;
 
       const percentage = (offsetX / width) * 100;
-      textElement.style.background = `linear-gradient(to right, #b2d885 ${percentage}%, #e8ded5 ${percentage}%)`;
+      textElement.style.background = `linear-gradient(to right,rgb(26, 70, 105) ${percentage}%,rgb(75, 148, 155)${percentage}%)`;
       textElement.style.backgroundClip = "text";
       textElement.style.color = "transparent";
     };
@@ -28,7 +28,7 @@ const useDynamicText = (id) => {
     const handleMouseLeave = () => {
       textElement.style.background = "none";
       textElement.style.backgroundClip = "unset";
-      textElement.style.color = "#e8ded5";
+      textElement.style.color = "rgb(75, 148, 155)";
     };
 
     textElement.addEventListener("mousemove", handleMouseMove);
@@ -48,7 +48,7 @@ export const Footer = () => {
       className="relative w-full h-full"
       style={{
         background:
-          "radial-gradient(circle, #d3eafd 0%, #e4f0f6 40%, #e7e9f3 100%)",
+          'radial-gradient(circle, #d3eafd 0%,rgb(140, 210, 245) 40%, #e7e9f3 100%)',
       }}
     >
       <div className="flex justify-center space-x-2 py-4 absolute -top-2 max-lg:-top-8 max-sm:-top-10 left-0 right-0 mt-2">
@@ -61,23 +61,15 @@ export const Footer = () => {
           </a>
         ))}
       </div>
+      <br></br>
       <div
-        className="text-center text-[22vw] p-0 m-0 leading-none font-apex text-[#e8ded5]"
+        className="text-center text-[17vw] p-0 m-0 leading-none font-apex text-[#e8ded5]"
         id="firefox"
       >
         AQUATWIN
       </div>
-      <div className="flex justify-around px-4 text-sm text-[#e8ded5] py-2">
-        <p className="max-sm:text-[1vh] text-[1.75vh] md:text-[2vh] hover:underline hover:underline-offset-2">
-          © 2024 Mozilla Firefox Club. All Rights Reserved
-        </p>
-        <p className="max-sm:text-[1vh] text-[1.75vh] md:text-[2vh] cursor-pointer hover:underline hover:underline-offset-2">
-          Privacy Policy
-        </p>
-        <p className="max-sm:text-[1vh] text-[1.75vh] md:text-[2vh] hover:underline hover:underline-offset-2">
-          Mozilla Foundation
-        </p>
-      </div>
     </div>
   );
 };
+
+export default Footer;
