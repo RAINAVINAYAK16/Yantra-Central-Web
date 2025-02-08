@@ -1,6 +1,6 @@
 const express = require('express');
 const ConnectMongo = require('./db');
-const Users = require('./model')
+const Users = require('./model');
 
 require('dotenv').config();
 
