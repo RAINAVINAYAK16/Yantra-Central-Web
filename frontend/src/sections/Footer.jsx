@@ -63,7 +63,7 @@ export const Footer = () => {
       </div>
       <br></br>
       <div
-        className="text-center text-[17vw] p-0 m-0 leading-none font-apex text-[#e8ded5]"
+        className="text-center text-[17vw] p-0 m-0 leading-none font-apex text-rgb(29, 182, 202)"
         id="firefox"
       >
         AQUATWIN
